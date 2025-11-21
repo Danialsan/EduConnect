@@ -18,12 +18,6 @@
         <!-- /Search -->
 
         <ul class="navbar-nav flex-row align-items-center ms-auto">
-            <!-- Place this tag where you want the button to render. -->
-            <li class="nav-item lh-1 me-3">
-                <a class="github-button" href="https://github.com/themeselection/sneat-html-admin-template-free"
-                    data-icon="octicon-star" data-size="large" data-show-count="true"
-                    aria-label="Star themeselection/sneat-html-admin-template-free on GitHub">Star</a>
-            </li>
 
             <!-- User -->
             <li class="nav-item navbar-dropdown dropdown-user dropdown">
@@ -78,9 +72,9 @@
                         <div class="dropdown-divider"></div>
                     </li>
                     <li>
-                        <button class="dropdown-item">
+                        <button class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                             <i class="bx bx-power-off me-2"></i>
-                            <span class="align-middle" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Keluar</span>
+                            <span class="align-middle">Keluar</span>
                         </button>
                     </li>
                 </ul>

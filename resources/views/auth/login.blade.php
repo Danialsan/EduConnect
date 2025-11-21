@@ -60,7 +60,7 @@
                         <div class="mb-3">
                             <div class="form-floating">
                                 <input type="email" class="form-control" id="email" name="email" placeholder=""
-                                    required :value="old('email')" />
+                                    required value="{{ old('email') }}" />
                                 <label for="email">Email <span class="text-danger">*</span></label>
                             </div>
                             <x-input-error :messages="$errors->get('email')" class="mt-2" />
